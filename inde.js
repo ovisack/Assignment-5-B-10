@@ -31,6 +31,7 @@ calculateButtons.forEach((button, index) => {
 
       // Clear the input field after donation
       inputElement.value = '';
+      alert('amount add balance exceed full')
       
     } else {
       alert("Please enter a valid amount that does not exceed your balance.");
