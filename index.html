@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css" rel="stylesheet">
 </head>
 <body>
-    <div class="sm:box-arae ">
+    <div class=" box-arae ">
         <header>
 
   <!-- Navbar -->
@@ -17,7 +17,7 @@
     <div class="navbar-start">
       <a id="btn-blog" class="btn btn-ghost sm:text-2xl md:gap-7">Blog</a>
     </div>
-    <div class="navbar-center  lg:flex">
+    <div class="navbar-center md:-m-9  lg:flex">
         <img src="./img/logo.png" alt="">
         <h1><a class="sm:text-3xl">Donate Bangladesh</a></h1>
     </div>
@@ -31,8 +31,8 @@
           
       <div class="button">    
     <div class="flex justify-center gap-5 ">
-        <button class="btn btn-success">Donation</button>
-        <button id="button-history" class="btn btn-success">History</button>
+        <button id="donation-tab" class="btn bg-lime-600">Donation</button>
+        <button id="button-history" class="btn ">History</button>
     </div>
     </div>
     </header>
@@ -44,9 +44,9 @@
             <div class="Warpper">
                 
   
-
-                <!--  -->
-                <div class="hero bg-base-200 justify-center m-8">
+<section id="hidden-cart">
+                <!-- Donation Card-1 -->
+                <div class="hero bg-base-200 justify-center m-8 cart-1 ">
                     <div class="hero-content flex-col lg:flex-row">
                         <img src="./img/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
 
@@ -91,7 +91,7 @@
     </div>
 </div>
 <!-- cart 3 -->
-<div class="hero bg-base-200 justify-center m-8">
+<div class="hero bg-base-200 justify-center m-8 ">
   <div class="hero-content flex-col lg:flex-row">
       <img src="./img/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
       <div >
@@ -99,7 +99,7 @@
               <img src="./img/coin.png" alt="Coin Icon" class="w-6"> 
              <h2 class="total-amount">00.00</h2> <p>BDT</p>
          </button>
-          <h1 class="text-4xl font-bold">Donate Flood at khansama, Bangladesh</h1>
+          <h1 class="text-4xl sm:font-bold">Donate Flood at khansama, Bangladesh</h1>
           <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi.</p>
           <div class="grid gap-1">
               <input class="input input-bordered amount-input" type="number" placeholder="Write Donation Amount" required>
@@ -110,7 +110,7 @@
       </div>
   </div>
 </div>
-           <!--  -->
+</section>      <!--  -->
            <footer class="footer bg-neutral text-neutral-content p-10">
             <aside>
               <svg
@@ -179,15 +179,19 @@
            <!--  -->
     
     <!-- History Section -->
-    <!-- <div id="history-section" class="hidden mt- bg-whit p-4 rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold text-center mb-4">Donation History</h2>
-        <div id="history-list"> -->
-          <!-- History content will be dynamically inserted here -->
-        <!-- </div>
-      </div>
-       -->
+  <div id="history-list" class=" bg-white p-3 rounded-md border-1-3 border-indigo-50 ">
+    
+
+
+
+  </div>
+
+
+
+
+
       <!--  -->
-      <footer class="footer bg-neutral text-neutral-content p-10">
+      <footer class="lg:footer bg-neutral text-neutral-content p-10">
         <aside>
           <svg
             width="50"
@@ -246,10 +250,10 @@
         </nav>
       </footer>
       <!--  -->
-    
+    <script src="./history.js"></script>
        
     <script src="./inde.js"></script>
-    <script src="./Button.js"></script>
+  
     <script src="./test.js"></script>
 </body>
 </html>
