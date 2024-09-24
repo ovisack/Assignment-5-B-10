@@ -10,7 +10,7 @@ document.getElementById('button-history').addEventListener('click', function() {
   document.getElementById('history-list').innerText =`const calculateButtons = document.querySelectorAll('.amount-button');
 
    document.getElementById('history-list').innerHTML = `
-   ` <div class="p-4">
+   ` <div class="p-4">2
       <div class="bg-white p-4 rounded-lg shadow-md">
         <h3 class="text-lg font-semibold mb-2">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
         <p>Date: Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>

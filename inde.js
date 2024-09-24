@@ -22,15 +22,18 @@ calculateButtons.forEach((button, index) => {
     if (inputAmount > 0 && inputAmount <= balanceBDT) {
       // Calculate new balance and total donation amount
       const newBalance = balanceBDT - inputAmount;
-      const newTotal = currentTotalAmount + inputAmount;
-
-
+     
+       const newTotal = currentTotalAmount + inputAmount;
+  
+  
+    
       // Update the Amount-BDT balance and card's total donation amount
-      balanceElement.innerText = newBalance.toFixed(2);
+     
+  balanceElement.innerText = newBalance.toFixed(2);
       totalAmountElement.innerText = newTotal.toFixed(2);
 
       // Clear the input field after donation
-      inputElement.value = '';
+   
       alert('amount add balance exceed full')
       
     } else {
