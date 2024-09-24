@@ -33,6 +33,7 @@ calculateButtons.forEach((button, index) => {
       totalAmountElement.innerText = newTotal.toFixed(2);
 
       // Clear the input field after donation
+      inputElement.value = '';
    
       alert('amount add balance exceed full')
       
